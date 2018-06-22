@@ -1,0 +1,22 @@
+{
+  "name": "jsblackjack",
+  "version": "1.0.0",
+  "description": "A GUI implementation of blackjack",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anderu-W/javascript_blackjack.git"
+  },
+  "author": "Anderu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anderu-W/javascript_blackjack/issues"
+  },
+  "homepage": "https://github.com/Anderu-W/javascript_blackjack#readme",
+  "dependencies": {
+    "electron": "^2.0.3"
+  }
+}
