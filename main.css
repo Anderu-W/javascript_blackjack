@@ -24,7 +24,13 @@ li {
 li a {
     display: block;
     text-align: center;
+    margin: 0 100;
     padding: 14px 16px;
     color: cornsilk;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
