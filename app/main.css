@@ -1,9 +1,24 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/MaterialIcons-Regular.woff2) format('woff2');
+}
+
 body {
-    background-color: dimgray;
+    background-color: #572b9c;
+    color: #ffebe1;
+    -webkit-app-region: drag;
+    padding: 0;
+}
+a {
+    -webkit-app-region: no-drag;
+}
+#titlebar>div {
+    font-family: 'Material Icons';
 }
 h1 {
     text-align: center;
-    color: cornsilk;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
