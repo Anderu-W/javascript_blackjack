@@ -1,13 +1,32 @@
-const {app, BrowserWindow} = require('electron');
+const path = require('path');
 
-let mainWindow;
+const {
+    app,
+    BrowserWindow,
+    protocol
+} = require('electron');
 
-app.on('ready', function() {
-    mainWindow = new BrowserWindow({
-        show: false,
-        frame: false,
-        backgroundColor: '#572b9c',
+function createWindow() {
+    protocol.interceptFileProtocol('file', function(req, callback) {
+        let url = req.url.substr(5);
+        callback({
+            path: path.normalize(__dirname + url),
+        });
     });
-    mainWindow.loadURL('file://' + __dirname + '/app/index.html');
+
+    // Create the browser window.
+    mainWindow = new BrowserWindow({
+      width: 800,
+      height: 600,
+      frame: false,
+      show: false,
+      backgroundColor: '#572b9c',
+    });
+
+    // and load the index.html of the app.
+    mainWindow.loadURL('file://app/index.html');
     mainWindow.show();
+}
+app.on('ready', function() {
+    createWindow();
 });

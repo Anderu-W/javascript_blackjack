@@ -2,50 +2,41 @@
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(./fonts/MaterialIcons-Regular.woff2) format('woff2');
+    src: url(/fonts/MaterialIcons/MaterialIcons-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/Aileron/Aileron-Black.ttf) format('truetype')
 }
 
 body {
     background-color: #572b9c;
     color: #ffebe1;
-    -webkit-app-region: drag;
-    padding: 0;
+    font-family: 'Aileron';
+    margin: 0;
+    user-select: none;
+    cursor: default;
 }
-a {
-    -webkit-app-region: no-drag;
+#titlebar {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-app-region: drag;
+    border-bottom: rgba(0,0,0,0.4) 1px solid;
 }
 #titlebar>div {
     font-family: 'Material Icons';
-}
-h1 {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: transparent;
+    transition: background 100ms linear;
+    -webkit-app-region: no-drag;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    text-align: center;
-    display: block;
-}
-
-li {
-    float: initial;
-}
-
-li a {
-    display: block;
-    text-align: center;
-    margin: 0 100;
-    padding: 14px 16px;
-    color: cornsilk;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
+#titlebar>div:hover {
+    background: rgba(255,255,255,0.4);
 }
