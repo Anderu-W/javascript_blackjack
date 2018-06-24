@@ -18,7 +18,7 @@ ul {
 }
 
 li {
-    float: left;
+    float: initial;
 }
 
 li a {
@@ -34,3 +34,4 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
