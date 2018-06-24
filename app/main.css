@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: flex-end;
     -webkit-app-region: drag;
-    border-bottom: rgba(0,0,0,0.4) 1px solid;
+    border-bottom: rgba(0,0,0,0.6) 1px solid;
 }
 #titlebar>div {
     font-family: 'Material Icons';
